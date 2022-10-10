@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Display Types</title>
+        <style>
+            span {
+                width: 40%;
+                /* Q. How do the elements appear? Does the width have any effect? Why/Why not? 
+                Ans: The width property does not have any effect since span is by deafult inline and it only covers 
+                the space required by the content inside it. */
+                display: inline;
+                /* Q. Next, set display to inline. Does it cause any change? Why/Why not?
+                Ans: It does not cause any change since the span comes with by default inline display. */
+                display: block;
+                /* Q. Next, set display to block. What change does it cause? 
+                Ans: On changing the display from inline to block the elements are displayed in different lines as 
+                if they are stacked on one another. */
+                display: inline-block;
+                /* Q. Next, set display to inline-block. What change does it cause? 
+                Ans: On changing the display to inline-block the width property gets applied to the element and the
+                block and the block takes up a width of 40% and same follows for the remaining two blocks. */
+            }
+        </style>
+    </head>
+
+    <body>
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <!-- In conclusion, summarize the differences you noticed in the 3 behavior of the 3 display 
+            types. Search for other differences and jot them down mentally / physically! :)
+  *-_-*-_*-> The display block property when applied to an element assigns a block to the element of its parent.
+             The display inline property does not take up any extra space space and wraps up the content.
+             Display inline-block can be useful in combination with some other properties of css and can be very useful.
+        -->
+
+    </body>
+
+</html>
