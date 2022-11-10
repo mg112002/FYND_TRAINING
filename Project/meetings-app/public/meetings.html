@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/style.css">
+        <title>MeetingsApp</title>
+    </head>
+
+    <body>
+        <nav>
+            <div class="navbar-container">
+                <div class="container1">
+                    <div class="nav-item">
+                        <a class="nav-element" href="/index.html">Calendar</a>
+                    </div>
+                    <div class="nav-item  active-tab nav-item2">
+                        <a class="nav-element" id="active-element" href="/meetings.html">Meetings</a>
+                    </div>
+                    <div class="nav-item nav-item3">
+                        <a class="nav-element" href="/teams.html">Teams</a>
+                    </div>
+                </div>
+                <div class="container2">
+                    <div class="nav-item nav-item4">
+                        <p>Hello <span class="nav-email">jane.do@example.com!</span></p>
+                    </div>
+                    <div class="nav-item nav-item5">
+                        <p>Logout</p>
+                    </div>
+                </div>
+        </nav>
+        <br>
+        <div class="heading-contents">
+            <p class="main-heading">Meetings</p>
+            <br>
+            <hr />
+            <br>
+        </div>
+        <div class="content-tab">
+            <a href="/filter-search.html">
+                <div class="filter-search-tab ">Filter / Search meetings</div>
+            </a>
+            <a href="/meetings.html">
+                <div class="addmeet-tab active-content-tab">Add a meeting</div>
+            </a>
+        </div>
+        <div class="addmeeting">
+            <hr>
+        </div>
+        <div class="addmeet-tab-content">
+            <h2 class="addmeet-heading">Add a new meeting</h2>
+            <br>
+            <hr><br>
+            <label for="date">Date</label><br>
+            <input type="date" name="date" id="date">
+            <br><br>
+            <label for="startime">Start time (hh:mm)</label><br>
+            <input type="time" name="start-time" id="startime">
+            <br><br>
+            <label for="endtime">End time (hh:mm)</label><br>
+            <input type="time" name="end-time" id="endtime">
+            <br><br>
+            <label for="description">Description</label><br>
+            <textarea name="description" id="description" rows="2"
+                placeholder="What is agenda of the meeting?"></textarea>
+            <br><br>
+            <label for="emailid">EmailIDs of attendees, or team's short</label><br>
+            <input type="text" name="emailid" id="emailid"
+                placeholder="john@example.com, @annual-day, mark@example.com">
+            <p>Seperate emailids / team short names by commas - team short names always begin with @</p>
+            <br>
+            <button>Add meeting</button>
+        </div>
+    </body>
