@@ -1,0 +1,378 @@
+* {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.content-tab a:visited {
+    color: #1084fe;
+}
+
+#active-element {
+    color: #252525;
+}
+
+.calendar-date {
+    font-size: 12px;
+    height: 55px;
+}
+
+.calendar-date-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 60px;
+}
+
+.calendar-day {
+    color: #7e7e7f;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.container1 {
+    /* height: 3rem; */
+    width: 27%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container2 {
+    justify-content: flex-end;
+    width: 39%;
+    flex-wrap: wrap;
+    display: flex
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-box {
+    margin: 0 5% 5px;
+    height: 50px;
+    background-color: #73c7d5;
+}
+
+.heading-contents {
+    padding: 0 5%;
+}
+
+.date-heading {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#date-picker {
+    width: 270px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 8px;
+    color: #7e7e7f;
+}
+
+.filter-search-tab {
+    display: inline;
+    padding: 10px;
+}
+
+.content-tab {
+    color: #1084fe;
+    margin: 10px 5%;
+}
+
+.addmeet-tab {
+    display: inline;
+    padding: 10px;
+}
+
+.addmeeting {
+    margin: 0 5%;
+}
+
+.active-content-tab {
+    color: #252525;
+    display: inline;
+    border: 1px solid lightgray;
+    border-bottom: 4px solid white;
+    border-radius: 3px;
+}
+
+.head-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-content {
+    padding: 1% 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-heading {
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.meeting-info {
+    padding: 6px;
+    margin: 3px 1%;
+    font-size: small;
+    background-color: rgba(238, 238, 238, 1);
+}
+
+.meeting-info2 {
+    width: auto;
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    height: 60px;
+    padding: 6px;
+    margin: 3px 1%;
+    font-size: small;
+    background-color: rgba(238, 238, 238, 0.9);
+}
+
+.addmeet-heading,
+.filter-search-heading {
+    color: white;
+}
+
+.addmeet-tab-content,
+.filter-search-tab-content {
+    border-radius: 3px;
+    margin: 10px 5%;
+    padding: 2%;
+    background-color: #73C7D5;
+}
+
+.navbar-container {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.nav-email {
+    color: #20a5ba;
+}
+
+.nav-element {
+    text-decoration: none;
+    color: #7e7e7f;
+}
+
+.nav-item {
+    padding: 2% 2% 1%;
+    text-decoration: none;
+}
+
+.nav-item:hover {
+    background-color: #eeeeee;
+}
+
+.nav-item:active {
+    background-color: #eeeeee;
+}
+
+hr {
+    height: 0px;
+    background-color: #c6c6c6;
+    border-top: 1px;
+}
+
+.addmeet-tab-content hr,
+.filter-search-tab-content hr {
+    border-top: 1px solid gray;
+    border-bottom: none;
+    opacity: 0.3;
+}
+
+.addmeet-tab-content #date,
+#meet-name,
+#startime,
+#endtime,
+#description,
+#email-team,
+#search-for {
+    color: #7e7e7f;
+    margin: 1% 0;
+    width: 98%;
+    border: none;
+    border-radius: 3px;
+    padding: 1%;
+    font-size: medium;
+}
+
+#error {
+    color: red;
+    margin: 1% 0;
+}
+
+.addmeet-tab-content p {
+    color: white;
+    font-size: smaller;
+}
+
+.addmeet-tab-content button {
+    background-color: #18A2B8;
+    color: white;
+    border-radius: 4px;
+    width: 90px;
+    padding: 6px 5px;
+    border: none;
+}
+
+.filter-search-tab-content button {
+    background-color: #18A2B8;
+    color: white;
+    border-radius: 4px;
+    border: none;
+    padding: 6px 5px;
+    width: 65px;
+}
+
+.filter-search-content {
+    margin: 1% 5%;
+}
+
+#select-date {
+    margin: 1% 0;
+    width: 100%;
+    padding: 6px;
+    border: none;
+    border-radius: 3px;
+    font-size: medium;
+}
+
+/* .light-hr {
+    border-bottom: none;
+    border-top: 1px solid #eeeeee;
+    opacity: 0.3;
+} */
+
+.search-result-card {
+    width: 98%;
+    border: 1px solid #eeeeee;
+    border-radius: 2px;
+    padding: 1%;
+    margin-bottom: 1%;
+}
+
+p h3,
+.search-result-card h3,
+p h4,
+.search-result-card h4 {
+    display: inline;
+}
+
+.search-result-card p {
+    margin: 1% 0
+}
+
+.search-result-card button {
+    margin-bottom: 1%;
+    color: white;
+    background-color: crimson;
+    border: none;
+    padding: 5px;
+    width: 110px;
+    border-radius: 3px;
+}
+
+.search-result-card input {
+    width: 130px;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid lightgray;
+}
+
+.search-result-card .addbtn {
+    width: 40px;
+    background-color: #18A2B8;
+    margin-bottom: 0;
+}
+
+.teams-content {
+    margin: 0 5%;
+}
+
+.teams-content h3 {
+    color: #7e7e7f
+}
+
+.teams-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-basis: content;
+}
+
+.teams-card {
+    border-radius: 6px;
+    border: 1px solid #eeeeee;
+    width: 31%;
+    height: 425px;
+}
+
+.teams-card div {
+    margin: 6% 5%;
+}
+
+.teams-card div p {
+    font-size: 1.3rem;
+    display: inline;
+}
+
+.teams-card-description {
+    color: #7e7e7f;
+}
+
+.teams-card button {
+    width: 150px;
+    padding: 2% 1%;
+    font-size: medium;
+    color: white;
+    background-color: crimson;
+    border: none;
+    border-radius: 4px;
+}
+
+.teams-card h3 {
+    color: black;
+    display: inline;
+}
+
+.teams-card .medium-p {
+    font-size: 1.2rem;
+}
+
+.teams-card input {
+    margin-top: 2%;
+    border-radius: 3px;
+    border: 1px solid lightgray;
+    font-size: medium;
+    padding: 2%;
+    width: 45%;
+}
+
+.teams-card .addbtn {
+    width: 15%;
+    background-color: #18A2B8;
+    margin-bottom: 0;
+}
+
+/* .teams-card1 {
+    margin-left: 0;
+}
+
+.teams-card3 {
+    margin-right: 0;
+} */

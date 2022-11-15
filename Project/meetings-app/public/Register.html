@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/nav.css">
+        <link rel="stylesheet" href="css/login.css">
+        <title>Register</title>
+    </head>
+
+    <body>
+        <nav class="main-menu">
+            <ul class="main-menu-nav list-unstyled container">
+                <li class="d-lg-none">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <a href="/">Meetings App</a>
+                        <button class="fa-solid fa-bars main-menu-toggler"></button>
+                    </div>
+                </li>
+                <li class="main-menu-link"><a href="/">Calendar</a></li>
+                <li class="main-menu-link"><a href="/meetings.html">Meetings</a></li>
+                <li class="main-menu-link"><a href="/teams.html">Teams</a></li>
+                <li class="main-menu-link active-tab"><a href="/login.html" class="active">Login</a></li>
+            </ul>
+        </nav>
+        <div class="login-card-outer">
+            <div>
+                <h2>Meetings App</h2>
+                <p id="registration-errors"></p>
+                <form id="register-form">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your Name" required />
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter Email" required />
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Enter Password" required />
+                    <p>Already have an account?</p>
+                    <a href="/login.html">Login!</a><br />
+                    <button>Register</button>
+                </form>
+            </div>
+        </div>
+        <script src="/js/utils/nav.js" type="module"></script>
+        <script src="/js/pages/register.js" type="module"></script>
+    </body>
+
+</html>

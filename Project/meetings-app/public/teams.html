@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/nav.css">
+        <title>MeetingsApp</title>
+    </head>
+
+    <body>
+        <nav class="main-menu">
+            <ul class="main-menu-nav list-unstyled container">
+                <li class="d-lg-none">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <a href="/">Meetings App</a>
+                        <button class="fa-solid fa-bars main-menu-toggler"></button>
+                    </div>
+                </li>
+                <li class="main-menu-link"><a href="/">Calendar</a></li>
+                <li class="main-menu-link"><a href="/meetings.html">Meetings</a></li>
+                <li class="main-menu-link active-tab"><a href="/teams.html" class="active">Teams</a></li>
+                <li class="main-menu-link"><a href="/login.html">Login</a></li>
+            </ul>
+        </nav>
+        <br>
+        <div class="heading-contents">
+            <p class="main-heading">Teams</p>
+            <br>
+            <hr />
+            <br>
+        </div>
+        <div class="teams-content">
+            <h3>View and edit teams you are part of</h3>
+            <br>
+            <div class="teams-card-container">
+                <div class="teams-card teams-card1">
+                    <div>
+                        <h2>Customer acquistion campaign</h2><br>
+                        <p>@customer-acquistion</p><br>
+                        <p class="teams-card-description">Team to come up with stratergies to win over customers by end
+                            of FY21</p><br><br>
+                        <button>Excuse yourself</button><br><br>
+                        <hr><br>
+                        <h3>Members: </h3>
+                        <p class="medium-p">john@example.com, jane@example.com</p><br>
+                        <input type="number" name="select-member" placeholder="Select member">
+                        <button class="addbtn">Add</button>
+                    </div>
+                </div>
+                <div class="teams-card teams-card2">
+                    <div>
+                        <h2>MERN stack training</h2><br>
+                        <p>@mern-stack-training</p><br>
+                        <p class="teams-card-description">Group attending MERN stack training for website revamp project
+                        </p><br><br>
+                        <button>Excuse yourself</button><br><br>
+                        <hr><br>
+                        <h3>Members: </h3>
+                        <p class="medium-p">jane@example.com, mark@example.com</p><br>
+                        <input type="number" name="select-member" placeholder="Select member">
+                        <button class="addbtn">Add</button>
+                    </div>
+                </div>
+                <div class="teams-card teams-crd3"></div>
+            </div>
+        </div>
+        <script src="/js/utils/nav.js" type="module"></script>
+    </body>
