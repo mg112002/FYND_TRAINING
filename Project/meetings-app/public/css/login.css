@@ -1,0 +1,57 @@
+.login-card-outer {
+    width: 30%;
+    height: 60%;
+    border: 1px solid lightgray;
+    margin: 5% 35% 0;
+    border-radius: 10px;
+}
+
+.login-card-outer div {
+    margin: 15% 10%;
+}
+
+.login-card-outer h2 {
+    text-align: center;
+}
+
+.login-card-outer label {
+    display: block;
+    margin: 3% 0;
+    font-size: medium;
+}
+
+.login-card-outer input {
+    font-size: medium;
+    width: 89%;
+    border-radius: 3px;
+    padding: 4%;
+    margin: 1% 0 5%;
+}
+
+.login-card-outer a {
+    text-decoration: none;
+    color: blue;
+}
+
+.login-card-outer p {
+    margin-bottom: 0;
+}
+
+.login-card-outer button {
+    width: 100%;
+    margin: 3% 0;
+    padding: 5%;
+    border: none;
+    font-size: medium;
+    border-radius: 3px;
+    background-color: #18A2B8;
+    color: white;
+}
+
+@media (max-width: 992px) {
+    .login-card-outer {
+        width: 50%;
+        margin: 5% 25%;
+    }
+
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/nav.css">
+        <title>MeetingsApp</title>
+    </head>
+
+    <body>
+        <nav class="main-menu">
+            <ul class="main-menu-nav list-unstyled container">
+                <li class="d-lg-none">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <a href="/">Meetings App</a>
+                        <button class="fa-solid fa-bars main-menu-toggler"></button>
+                    </div>
+                </li>
+                <li class="main-menu-link"><a href="/">Calendar</a></li>
+                <li class="main-menu-link"><a href="/meetings.html">Meetings</a></li>
+                <li class="main-menu-link active-tab"><a href="/teams.html" class="active">Teams</a></li>
+                <li class="main-menu-link greet float-right">Hello<a id="user-name"></a></li>
+                <li class="main-menu-link"><a id="logout">Logout</a></li>
+            </ul>
+        </nav>
+        <br>
+        <div class="heading-contents">
+            <p class="main-heading">Teams</p>
+            <br>
+            <hr />
+            <br>
+        </div>
+        <div class="teams-content">
+            <h3>View and edit teams you are part of</h3>
+            <br>
+            <div class="teams-card-container">
+            </div>
+        </div>
+        <script src="/js/utils/nav.js" type="module"></script>
+        <script src="/js/pages/teams.js" type="module"></script>
+        <script src="/js/services/addTeam.js" type="module"></script>
+    </body>
